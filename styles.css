@@ -1,0 +1,79 @@
+/*Complete this CSS file (it is already linked to the HTML page). 
+Try to create an appealing design, keeping these principles and tips in mind:
+	1.Create a clear visual hierarchy (including styling your menu to clearly indicate what page is active).
+	2.Make sure the content doesn't feel cramped or too long (use margin, padding, width)
+	3.Try adding appeal to your design with good typographic choices (try using Google fonts)
+	4.Use em (rather than px) whenever possible
+	5.Adjust your design based on the screen size (try to create a responsive menu by using @media-queries)
+You may add some Javascript, but you don't have to.
+*/
+
+body {
+	background-color: #bae8ec;
+	color: black;
+	font-family: Arial;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a:hover {
+	color: #e39746;
+}
+
+#container {
+	min-width: 320px;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+#wrapper {
+	justify-content: center;
+	align-items: baseline;
+}
+
+#wrapper ul {
+	display: flex;
+}
+
+#wrapper li {
+	margin-left: 2em;
+}
+
+#wrapper a {
+	font-size: 1.5em;
+}
+
+#header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+h1 {
+	text-decoration: underline;
+}
+
+@media (min-width: 320px) {
+	.toggle-menu {
+		display: none;
+	}
+	nav {
+		display: block;
+	}
+}
+
+@media (max-width: 768px) {
+	.toggle-menu {
+		display: none;
+	}
+	nav {
+		display: block;
+	}
+}
